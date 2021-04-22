@@ -22,7 +22,8 @@ public class Cdb {
     }
     
     public float calcularRendimentoBruto(){
-           return 13.97f;
+        float bruto = (((float)numeroDias/365) * capitalInicial * taxaJuros )/100; 
+        return bruto;
     }
 
 }
