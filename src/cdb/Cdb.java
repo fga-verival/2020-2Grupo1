@@ -21,5 +21,8 @@ public class Cdb {
         this.numeroDias = numeroDias;
     }
     
+    public float calcularRendimentoBruto(){
+           return 13.97f;
+    }
 
 }
