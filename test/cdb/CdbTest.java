@@ -29,4 +29,10 @@ public class CdbTest {
        assertEquals(13.15f,cdb.calcularRendimentoBruto(),0.05);
     }
     
+    @Test
+    public void testCalcularRendimentoBruto3() {
+       Cdb cdb = new Cdb(2500,9.0f,700);
+       assertEquals(431.51f,cdb.calcularRendimentoBruto(),0.05);
+    }
+    
 }
