@@ -11,12 +11,15 @@ package cdb;
  */
 public class Cdb {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic 
-        System.out.println("leaf");
+    private float capitalInicial;
+    private float taxaJuros;
+    private int numeroDias;
+
+    public Cdb(float capitalInicial, float taxaJuros, int numeroDias) {
+        this.capitalInicial = capitalInicial;
+        this.taxaJuros = taxaJuros;
+        this.numeroDias = numeroDias;
     }
     
+
 }

@@ -15,19 +15,12 @@ import static org.junit.Assert.*;
  *
  * @author root
  */
-public class CdbTest {
-    
-    private Cdb cdb;
-    
-    @Before
-    public void setUp() {
-        cdb = new Cdb();
-    }
-   
+public class CdbTest {  
 
     @Test
-    public void testMain() {
-        assertEquals(1,1);
+    public void testCalcularRendimentoBruto() {
+       Cdb cdb = new Cdb(1000,8.5f,60);
+       assertEquals(cdb.calcularRendimentoBruto(), 13.97f,0);
     }
     
 }
