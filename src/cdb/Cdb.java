@@ -34,7 +34,8 @@ public class Cdb {
     }
     
     public float calcularImposto(){
-        return 35.51f;
+        float imposto = this.calcularRendimentoBruto() * (this.getAliquota()/100.0f);
+        return imposto;
     }
 
 }
