@@ -25,5 +25,17 @@ public class Cdb {
         float bruto = (((float)numeroDias/365) * capitalInicial * taxaJuros )/100; 
         return bruto;
     }
+    
+    public float getAliquota(){
+        if(this.numeroDias <= 180) return 22.5f;
+        if(this.numeroDias <= 360) return 20f;
+        if(this.numeroDias <= 720) return 17.5f;
+        return 15f;
+    }
+    
+    public float calcularImposto(){
+        float imposto = this.calcularRendimentoBruto() * (this.getAliquota()/100.0f);
+        return imposto;
+    }
 
 }
