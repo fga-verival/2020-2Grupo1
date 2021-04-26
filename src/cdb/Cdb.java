@@ -39,7 +39,9 @@ public class Cdb {
     }
     
     public float calcularRendimentoLiquido() {
-        return 14.2397f;
+        float valor_final = this.capitalInicial + this.calcularRendimentoBruto() - this.calcularImposto();
+        float porcentagem_liquido = (valor_final / this.capitalInicial) * 100 - 100;
+        return porcentagem_liquido;
     }
     
 }
