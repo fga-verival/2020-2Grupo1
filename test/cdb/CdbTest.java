@@ -64,4 +64,10 @@ public class CdbTest {
         Cdb cdb = new Cdb(4200, 9.5f, 900);
         assertEquals(19.9110f, cdb.calcularRendimentoLiquido(), 0.05);
     }
+    
+    @Test
+    public void testCalcularRendimentoLiquido3() {
+        Cdb cdb = new Cdb(100, 7.5f, 1000);
+        assertEquals(17.4658f, cdb.calcularRendimentoLiquido(), 0.05);
+    }
 }
