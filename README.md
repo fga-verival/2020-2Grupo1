@@ -9,5 +9,5 @@
 ## Análise Crítica
 A maior dificuldade encontrada foi definir quais casos testar para contemplar a triangulação. Isso porque é importante definir casos que vão testar possibilidades realmente diferentes e casos especiais. Por isso o uso do particionamento de equivalência e análise de valor limite. Fora isso não houveram maiores dificuldades, as técnicas e o TDD de forma geral ajudam bastante a enxergar melhor como planejar as funcionalidades e garantir seu correto funcionamento.
 
-## Screenshot
+## Resultados
 ![screen1](screenshots/testes.png)
